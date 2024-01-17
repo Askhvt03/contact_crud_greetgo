@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: askhat
+      changes:
+        - sqlFile:
+            dbms: postgresql
+            endDelimiter: ;
+            splitStatements: true
+            path: classpath:db/changelog/2024_01_15_create_init_tables.sql
+  - changeSet:
+      id: 2
+      author: askhat
+      changes:
+        - sqlFile:
+            dbms: postgresql
+            endDelimiter: ;
+            splitStatements: true
+            path: classpath:db/changelog/2024_01_15_insert_tables.sql
